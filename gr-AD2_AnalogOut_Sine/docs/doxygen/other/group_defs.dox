@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio AD2_ANALOGOUT_SINE C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the AD2_ANALOGOUT_SINE GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

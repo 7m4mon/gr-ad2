@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<block>
+  <name>AD2_AnalogIn_Shift</name>
+  <key>AD2_AnalogIn_Shift_AD2_AnalogIn_Shift_f</key>
+  <category>[AnalogDiscovery2]</category>
+  <import>import AD2_AnalogIn_Shift</import>
+  <make>AD2_AnalogIn_Shift.AD2_AnalogIn_Shift_f($channel, $v_range, $hz_acq, $n_samples)</make>
+  <param>
+    <name>Channel</name>
+    <key>channel</key>
+    <type>int</type>
+  </param>
+  
+  <param>
+    <name>Range [V]</name>
+    <key>v_range</key>
+    <type>float</type>
+  </param>
+  
+  <param>
+    <name>Acq Freq [Hz]</name>
+    <key>hz_acq</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Buffer Size</name>
+    <key>n_samples</key>
+    <type>int</type>
+  </param>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

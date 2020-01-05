@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>AD2_AnalogOut_Sine</name>
+  <key>AD2_AnalogOut_Sine_AD2_AnalogOut_Sine_i</key>
+  <category>[AnalogDiscovery2]</category>
+  <import>import AD2_AnalogOut_Sine</import>
+  <make>AD2_AnalogOut_Sine.AD2_AnalogOut_Sine_i($channel, $amplituide, $offset)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Channel</name>
+    <key>channel</key>
+    <type>int</type>
+  </param>
+  
+  <param>
+    <name>Amplituide</name>
+    <key>amplituide</key>
+    <type>float</type>
+  </param>
+  
+  <param>
+    <name>Offset</name>
+    <key>offset</key>
+    <type>float</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>freqHz</name>
+    <type>int</type>
+  </sink>
+
+</block>

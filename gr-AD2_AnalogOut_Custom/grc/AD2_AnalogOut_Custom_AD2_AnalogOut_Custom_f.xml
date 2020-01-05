@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<block>
+  <name>AD2_AnalogOut_Custom</name>
+  <key>AD2_AnalogOut_Custom_AD2_AnalogOut_Custom_f</key>
+  <category>[AnalogDiscovery2]</category>
+  <import>import AD2_AnalogOut_Custom</import>
+  <make>AD2_AnalogOut_Custom.AD2_AnalogOut_Custom_f($channel, $amplituide, $frequency)</make>
+  <param>
+    <name>Channel</name>
+    <key>channel</key>
+    <type>int</type>
+  </param>
+  
+  <param>
+    <name>Amplituide</name>
+    <key>amplituide</key>
+    <type>float</type>
+  </param>
+  
+  <param>
+    <name>Frequency</name>
+    <key>frequency</key>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+</block>

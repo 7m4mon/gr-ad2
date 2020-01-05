@@ -1,0 +1,9 @@
+/usr/local/lib/cmake/AD2_AnalogIn_Shift/AD2_AnalogIn_ShiftConfig.cmake
+/usr/local/include/AD2_AnalogIn_Shift/api.h
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/__init__.py
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/AD2_AnalogIn_Shift_f.py
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/__init__.pyc
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/AD2_AnalogIn_Shift_f.pyc
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/__init__.pyo
+/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Shift/AD2_AnalogIn_Shift_f.pyo
+/usr/local/share/gnuradio/grc/blocks/AD2_AnalogIn_Shift_AD2_AnalogIn_Shift_f.xml

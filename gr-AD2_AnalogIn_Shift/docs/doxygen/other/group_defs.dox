@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio AD2_ANALOGIN_SHIFT C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the AD2_ANALOGIN_SHIFT GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+
