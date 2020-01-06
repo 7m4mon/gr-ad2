@@ -20,7 +20,7 @@
 # 
 """
    ++++ AD2_AnalogIn_Shift ++++
-   This is the sink block for Digilent's AnalogDiscovery2 AnalogIn
+   This is the source block for Digilent's AnalogDiscovery2 AnalogIn
    written by 7m4mon <http://nomulabo.com>
 
    Based on DWF Python Example
@@ -76,16 +76,21 @@ class AD2_AnalogIn_Shift_f(gr.sync_block):
         out_len = len(output_items[0])
         while self.ary_num < out_len:
             cValid = self.dwf_ai.statusSamplesValid()
-            self.rgdSamples.extend(self.dwf_ai.statusData(0, cValid) )
+            self.rgdSamples.extend(self.dwf_ai.statusData(0, cValid))
             self.ary_num += cValid
             print cValid
-
+            
+        out[:] = self.rgdSamples[:out_len]
         self.ary_num -= out_len
         if self.ary_num == 0:
             self.rgdSamples = []
-        else:
+        else:   
             self.rgdSamples = self.rgdSamples[out_len + 1:]
-        out[:] = self.rgdSamples[:out_len]
+        
+        while self.ary_num > out_len:
+            self.ary_num -= out_len
+            self.rgdSamples = self.rgdSamples[out_len + 1:]
+            print "!!!Buffer Skipped!!!"             
         
         return len(output_items[0])
 

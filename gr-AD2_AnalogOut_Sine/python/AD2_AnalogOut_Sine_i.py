@@ -21,7 +21,7 @@
 
 """
    ++++ AD2_AnalogOut_Sine ++++
-   This is the source block for Digilent's AnalogDiscovery2 AnalogOut
+   This is the sink block for Digilent's AnalogDiscovery2 AnalogOut
    written by 7m4mon <http://nomulabo.com>
 
    Based on DWF Python Example 2
