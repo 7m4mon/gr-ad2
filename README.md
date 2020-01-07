@@ -1,10 +1,11 @@
 # gr-ad2
-### GRC (GNU Radio Companion) Blocks for Digilent's Analog Discovery 2
+### GRC (GNU Radio Companion) Blocks for Digilent's Analog Discovery 2  
+written by 7M4MON
 
-  Based on DWF Python Example, DWF library wrapper  
-  [PyPi - dwf](https://pypi.org/project/dwf/)  
-  Modified by: MURAMATSU Atsushi  
-  Original Author:  Digilent, Inc.  
+    Based on DWF Python Example, DWF library wrapper  
+    [PyPi - dwf](https://pypi.org/project/dwf/)  
+    Modified by: MURAMATSU Atsushi  
+    Original Author:  Digilent, Inc.  
 
 #### AnalogIn_Shift  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Shift.grc.png" alt="AnalogIn_Shift" title="">
