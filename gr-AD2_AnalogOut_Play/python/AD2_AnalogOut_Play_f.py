@@ -79,7 +79,7 @@ class AD2_AnalogOut_Play_f(gr.sync_block):
         self.dwf.FDwfAnalogOutRepeatSet(self.hdwf, self.channel, c_int(1))
         #sRun = 1.0*self.size/rate
         print "Length: "+str(sRun)
-        self.dwf.FDwfAnalogOutRunSet(self.hdwf, self.channel, c_double(sRun))
+        self.dwf.FDwfAnalogOutRunSet(self.hdwf, self.channel, c_double(-1)) #sRun
         self.dwf.FDwfAnalogOutNodeFrequencySet(self.hdwf, self.channel, 0, c_double(rate))
         self.dwf.FDwfAnalogOutNodeAmplitudeSet(self.hdwf, self.channel, 0, c_double(amplituide))
         # prime the buffer with the first chunk of data
@@ -106,7 +106,7 @@ class AD2_AnalogOut_Play_f(gr.sync_block):
         in_len = len(in0)
         self.data_c.extend(in0)
         
-        print len(self.data_c)
+        #print "len data_c " + str(len(self.data_c))
         # fetch analog in info for the self.channel
         if self.dwf.FDwfAnalogOutStatus(self.hdwf, self.channel, byref(self.sts)) != 1:
             print "Error"
@@ -116,7 +116,7 @@ class AD2_AnalogOut_Play_f(gr.sync_block):
         
         if self.sts.value != 3: 
             print "!!! DwfStateNotRunning!!!" # not running !DwfStateRunning
-        if self.iPlay >= self.size : print "!!! Expired !!!"  # no more data to stream
+        #if self.iPlay >= self.size : print "!!! Expired !!!"  # no more data to stream
         
         self.dwf.FDwfAnalogOutNodePlayStatus(self.hdwf, self.channel, 0, byref(self.dataFree), byref(self.dataLost), byref(self.dataCorrupted))
         self.totalLost += self.dataLost.value
