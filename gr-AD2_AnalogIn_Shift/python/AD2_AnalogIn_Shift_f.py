@@ -85,11 +85,11 @@ class AD2_AnalogIn_Shift_f(gr.sync_block):
         if self.ary_num == 0:
             self.rgdSamples = []
         else:   
-            self.rgdSamples = self.rgdSamples[out_len + 1:]
+            self.rgdSamples = self.rgdSamples[out_len:]
         
         while self.ary_num > out_len:
             self.ary_num -= out_len
-            self.rgdSamples = self.rgdSamples[out_len + 1:]
+            self.rgdSamples = self.rgdSamples[out_len:]
             print "!!!Buffer Skipped!!!"             
         
         return len(output_items[0])
