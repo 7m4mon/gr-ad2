@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<block>
+  <name>AD2_AnalogOut_Play</name>
+  <key>AD2_AnalogOut_Play_AD2_AnalogOut_Play_f</key>
+  <category>[AnalogDiscovery2]</category>
+  <import>import AD2_AnalogOut_Play</import>
+  <make>AD2_AnalogOut_Play.AD2_AnalogOut_Play_f($channel, $amplituide, $rate, $sRun)</make>
+  <param>
+    <name>Channel</name>
+    <key>channel</key>
+    <type>int</type>
+  </param>
+  
+  <param>
+    <name>Amplituide</name>
+    <key>amplituide</key>
+    <type>float</type>
+  </param>
+  
+  <param>
+    <name>Rate Hz</name>
+    <key>rate</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>RunningTime sec</name>
+    <key>sRun</key>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+</block>
