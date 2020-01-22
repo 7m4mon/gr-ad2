@@ -12,6 +12,9 @@ written by 7M4MON
 
 #### AnalogOut_Play  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play.grc.png" alt="AnalogOut_Play" title="">
+<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play_AM_Mod.grc.png" alt="AnalogOut_Play_AM_Mod" title="">
+<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play_AM_Mod_Photo.jpg alt="AnalogOut_Play_AM_Mod_Photo" title="">
+
 
 #### AnalogIn_Shift  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Shift.grc.png" alt="AnalogIn_Shift" title="">
