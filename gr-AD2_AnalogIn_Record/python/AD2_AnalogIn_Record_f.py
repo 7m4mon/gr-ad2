@@ -26,26 +26,25 @@ class AD2_AnalogIn_Record_f(gr.sync_block):
         #print DWF version
         print("DWF Version: " + dwf.FDwfGetVersion())
 
-        #constants
-        sRun = -1.0
+        #open device with configure
+        self.hdwf = dwf.Dwf(-1,1)   # 1:Scope Buffer Size 16k
 
-        #open device
-        self.hdwf = dwf.Dwf()
-        
         #set up acquisition
         self.dwf_ai = dwf.DwfAnalogIn(self.hdwf)
         self.dwf_ai.channelEnableSet(channel, True)
         self.dwf_ai.channelRangeSet(channel, v_range)
         self.dwf_ai.acquisitionModeSet(self.dwf_ai.ACQMODE.RECORD)
         self.dwf_ai.frequencySet(hz_acq)
-        self.dwf_ai.recordLengthSet(sRun)
+        self.dwf_ai.recordLengthSet(-1)             #infinite time
+        buffer_size = self.dwf_ai.bufferSizeGet()
+        print "BufferSize " + str(buffer_size)
 
         #wait at least 2 seconds for the offset to stabilize
         time.sleep(2)
 
         #begin acquisition
         self.dwf_ai.configure(False, True)
-        print("   waiting to finish")
+        print("begin acquisition")
 
         self.rgdSamples = [0.0] * n_samples
         self.cSamples = 0
@@ -55,7 +54,6 @@ class AD2_AnalogIn_Record_f(gr.sync_block):
     def work(self, input_items, output_items):
         out = output_items[0]
         out_len = len(output_items[0])
-        print "out_len " + str(out_len)
         sts = self.dwf_ai.status(True)
         if self.cSamples == 0 and sts in (self.dwf_ai.STATE.CONFIG,
                                      self.dwf_ai.STATE.PREFILL,
@@ -67,8 +65,10 @@ class AD2_AnalogIn_Record_f(gr.sync_block):
         self.cSamples += cLost
             
         if cLost > 0:
+            print "fLost" + str(fLost)
             self.fLost = True
         if cCorrupted > 0:
+            print "cCorrupted" + str(cCorrupted)
             self.fCorrupted = True
         if cAvailable == 0:
             print "cAvailable == 0"
@@ -79,8 +79,9 @@ class AD2_AnalogIn_Record_f(gr.sync_block):
             self.rgdSamples.extend(self.dwf_ai.statusData(0, cAvailable))
             self.cSamples += cAvailable
             
-            print "cAvailable " + str(cAvailable)
-            print "len_rgdSamples " + str(len(self.rgdSamples))
+            #print "out_len " + str(out_len)
+            #print "cAvailable " + str(cAvailable)
+            #print "len_rgdSamples " + str(len(self.rgdSamples))
             if out_len < len(self.rgdSamples):
                 out[:] = self.rgdSamples[:out_len]
                 self.rgdSamples = self.rgdSamples[out_len:]

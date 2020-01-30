@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <block>
-  <name>AD2_AnalogIn_Record</name>
+  <name>AD2 AnalogIn Record Source</name>
   <key>AD2_AnalogIn_Record_AD2_AnalogIn_Record_f</key>
   <category>[AnalogDiscovery2]</category>
   <import>import AD2_AnalogIn_Record</import>
