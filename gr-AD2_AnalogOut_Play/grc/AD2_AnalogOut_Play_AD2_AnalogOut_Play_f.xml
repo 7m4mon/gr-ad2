@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <block>
-  <name>AD2_AnalogOut_Play</name>
+  <name>AD2 AnalogOut Play Sink</name>
   <key>AD2_AnalogOut_Play_AD2_AnalogOut_Play_f</key>
   <category>[AnalogDiscovery2]</category>
   <import>import AD2_AnalogOut_Play</import>
-  <make>AD2_AnalogOut_Play.AD2_AnalogOut_Play_f($channel, $amplituide, $rate, $sRun)</make>
+  <make>AD2_AnalogOut_Play.AD2_AnalogOut_Play_f($channel, $amplituide, $rate , $n_samples)</make>
   <param>
     <name>Channel</name>
     <key>channel</key>
@@ -23,9 +23,9 @@
     <type>int</type>
   </param>
 
-  <param>
-    <name>RunningTime sec</name>
-    <key>sRun</key>
+    <param>
+    <name>Buffer Size</name>
+    <key>n_samples</key>
     <type>int</type>
   </param>
 
