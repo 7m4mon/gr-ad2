@@ -1,9 +1,0 @@
-/usr/local/lib/cmake/AD2_AnalogOut_Play/AD2_AnalogOut_PlayConfig.cmake
-/usr/local/include/AD2_AnalogOut_Play/api.h
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/__init__.py
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/AD2_AnalogOut_Play_f.py
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/__init__.pyc
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/AD2_AnalogOut_Play_f.pyc
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/__init__.pyo
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogOut_Play/AD2_AnalogOut_Play_f.pyo
-/usr/local/share/gnuradio/grc/blocks/AD2_AnalogOut_Play_AD2_AnalogOut_Play_f.xml

@@ -1,9 +1,0 @@
-/usr/local/lib/cmake/AD2_AnalogIn_Record/AD2_AnalogIn_RecordConfig.cmake
-/usr/local/include/AD2_AnalogIn_Record/api.h
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/__init__.py
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/AD2_AnalogIn_Record_f.py
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/__init__.pyc
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/AD2_AnalogIn_Record_f.pyc
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/__init__.pyo
-/usr/local/lib/python2.7/dist-packages/AD2_AnalogIn_Record/AD2_AnalogIn_Record_f.pyo
-/usr/local/share/gnuradio/grc/blocks/AD2_AnalogIn_Record_AD2_AnalogIn_Record_f.xml
