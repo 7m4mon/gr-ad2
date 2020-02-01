@@ -28,7 +28,6 @@
        Python 2.7
 """
 import numpy
-import ctypes
 from ctypes import *
 import sys
 
@@ -81,12 +80,11 @@ class AD2_AnalogOut_Play_f(gr.sync_block):
         self.dwf.FDwfAnalogOutRunSet(self.hdwf, self.channel, c_double(-1)) #sRun
         self.dwf.FDwfAnalogOutNodeFrequencySet(self.hdwf, self.channel, 0, c_double(rate))
         self.dwf.FDwfAnalogOutNodeAmplitudeSet(self.hdwf, self.channel, 0, c_double(amplituide))
-        # prime the buffer with the first chunk of data
-        self.cBuffer = c_int(0)     #cBuffer may be buffer size of AD2
+        self.cBuffer = c_int(0)     #cBuffer is the buffer size of AD2
         self.dwf.FDwfAnalogOutNodeDataInfo(self.hdwf, self.channel, 0, 0, byref(self.cBuffer))
         print "pnSamplesMax " + str(self.cBuffer.value)
         self.data_c = [0.0] *  self.cBuffer.value
-        self.dwf.FDwfAnalogOutNodeDataSet(self.hdwf, self.channel, 0, (ctypes.c_double * len(self.data_c))(*self.data_c), self.cBuffer.value)
+        self.dwf.FDwfAnalogOutNodeDataSet(self.hdwf, self.channel, 0, (c_double * len(self.data_c))(*self.data_c), self.cBuffer.value)
         self.iPlay += self.cBuffer.value
         self.dwf.FDwfAnalogOutConfigure(self.hdwf, self.channel, c_bool(True))
         
@@ -127,7 +125,7 @@ class AD2_AnalogOut_Play_f(gr.sync_block):
             print "dataCorrupted " + str(self.dataCorrupted.value)
         
         if self.dataFree.value < len(self.data_c):
-            if self.dwf.FDwfAnalogOutNodePlayData(self.hdwf, self.channel, 0, (ctypes.c_double * len(self.data_c))(*self.data_c), self.dataFree.value) != 1: 
+            if self.dwf.FDwfAnalogOutNodePlayData(self.hdwf, self.channel, 0, (c_double * len(self.data_c))(*self.data_c), self.dataFree.value) != 1: 
                 print "DataWriteError"
             self.data_c = self.data_c[self.dataFree.value:]
             self.iPlay += self.dataFree.value
