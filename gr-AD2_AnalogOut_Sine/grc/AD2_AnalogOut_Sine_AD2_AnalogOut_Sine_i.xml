@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <block>
-  <name>AD2_AnalogOut_Sine</name>
+  <name>AD2 AnalogOut Sine Sink</name>
   <key>AD2_AnalogOut_Sine_AD2_AnalogOut_Sine_i</key>
   <category>[AnalogDiscovery2]</category>
   <import>import AD2_AnalogOut_Sine</import>

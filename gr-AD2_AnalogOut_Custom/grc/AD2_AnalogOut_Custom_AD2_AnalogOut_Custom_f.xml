@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <block>
-  <name>AD2_AnalogOut_Custom</name>
+  <name>AD2 AnalogOut Custom Sink</name>
   <key>AD2_AnalogOut_Custom_AD2_AnalogOut_Custom_f</key>
   <category>[AnalogDiscovery2]</category>
   <import>import AD2_AnalogOut_Custom</import>

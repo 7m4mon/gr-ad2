@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <block>
-  <name>AD2_AnalogIn_Shift</name>
+  <name>AD2 AnalogIn Shift Source</name>
   <key>AD2_AnalogIn_Shift_AD2_AnalogIn_Shift_f</key>
   <category>[AnalogDiscovery2]</category>
   <import>import AD2_AnalogIn_Shift</import>
