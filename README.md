@@ -16,10 +16,11 @@ by 7M4MON
     $ make  
     $ sudo make install  
 
-You should be install Waveforms from Digilent, and PyPI - dwf.
-    $ sudo dpkg -i digilent.adept.runtime_2.18.3-amd64.deb
-    $ sudo dpkg -i digilent.waveforms_3.8.2_amd64.deb
-    $ pip install dwf
+You should be install Waveforms from Digilent, and PyPI - dwf.  
+
+    $ sudo dpkg -i digilent.adept.runtime_2.18.3-amd64.deb  
+    $ sudo dpkg -i digilent.waveforms_3.8.2_amd64.deb  
+    $ pip install dwf  
 
 
 #### AnalogIn_Record  
