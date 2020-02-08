@@ -10,11 +10,11 @@ by 7M4MON
 ## How to install (I'm using Ubuntsu and GRC 3.7.11 with WX GUI.)
    at "gr-AD2_AnalogXx_Xxxxxx" directory
    
-   $ mkdir build ?
-   $ cd build ?
-   $ cmake ../ ?
-   $ make ?
-   $ sudo make install ?
+    $ mkdir build ?  
+    $ cd build ?  
+    $ cmake ../ ?  
+    $ make ?  
+    $ sudo make install ?  
 
 
 #### AnalogIn_Record  
