@@ -1,14 +1,25 @@
 # gr-ad2
 ### GRC (GNU Radio Companion) Blocks for Digilent's Analog Discovery 2  
-written by 7M4MON
+by 7M4MON
 
     Based on DWF Python Example, DWF library wrapper  
     [PyPi - dwf](https://pypi.org/project/dwf/)  
     Modified by: MURAMATSU Atsushi  
     Original Author:  Digilent, Inc.  
 
+## How to install (I'm using Ubuntsu and GRC 3.7.11 with WX GUI.)
+   at "gr-AD2_AnalogXx_Xxxxxx" directory
+   
+   $ mkdir build ?
+   $ cd build ?
+   $ cmake ../ ?
+   $ make ?
+   $ sudo make install ?
+
+
 #### AnalogIn_Record  
-<img src="https://github.com/7m4mon/gr-ad2/blob/master/AD2_AnalogFM_Demod_450kHz.png" alt="AD2_AnalogFM_Demod_450kHz" title="">
+<img src="https://github.com/7m4mon/gr-ad2/blob/master/AD2_AnalogFM_Demod_450kHz.png" alt="AD2_AnalogFM_Demod_450kHz" title="">  
+450kHz FM Demod (5th nyquist zone)
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AD2_AnalogFM_Demod_450kHz_Photo.jpg" alt="AD2_AnalogFM_Demod_450kHz_Photo" title="">
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Record_FM_Demod.grc.png" alt="AnalogIn_Record_FM_Demod.grc" title="">
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Record.grc.png" alt="AnalogIn_Record" title="">
