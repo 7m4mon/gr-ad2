@@ -18,9 +18,11 @@ by 7M4MON
 
 You should be install Waveforms from Digilent, and PyPI - dwf.  
 
-    $ sudo dpkg -i digilent.adept.runtime_2.18.3-amd64.deb  
-    $ sudo dpkg -i digilent.waveforms_3.8.2_amd64.deb  
+    $ sudo dpkg -i digilent.adept.runtime_2.19.2-amd64.deb  
+    $ sudo dpkg -i digilent.waveforms_3.12.1_amd64.deb  
     $ pip install dwf  
+
+My dwf version is 3.12.1.
 
 
 #### AnalogIn_Record  
@@ -31,10 +33,10 @@ You should be install Waveforms from Digilent, and PyPI - dwf.
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Record.grc.png" alt="AnalogIn_Record" title="">
 
 #### AnalogOut_Play  
-<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play.grc.png" alt="AnalogOut_Play" title="">
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play_AM_Mod.grc.png" alt="AnalogOut_Play_AM_Mod" title="">  
 40kHz AM Modulation.
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play_AM_Mod_Photo.jpg" alt="AnalogOut_Play_AM_Mod_Photo" title="">
+<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play.grc.png" alt="AnalogOut_Play" title="">
 
 
 #### AnalogIn_Shift  
