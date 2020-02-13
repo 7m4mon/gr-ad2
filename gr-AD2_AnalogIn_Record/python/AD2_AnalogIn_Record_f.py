@@ -65,7 +65,7 @@ class AD2_AnalogIn_Record_f(gr.sync_block):
         self.cSamples += cLost
             
         if cLost > 0:
-            print "fLost" + str(fLost)
+            print "cLost" + str(cLost)
             self.fLost = True
         if cCorrupted > 0:
             print "cCorrupted" + str(cCorrupted)
