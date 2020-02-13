@@ -24,6 +24,9 @@ You should be install Waveforms from Digilent, and PyPI - dwf.
 
 My dwf version is 3.12.1.
 
+When you stop a flow graph, please close with not kill button but GUI 'x' button.  
+<img src="https://github.com/7m4mon/gr-ad2/blob/master/do_not_abort_with_kill_button.png" alt="" title="">  
+The device would be locked because the stop function was not called.
 
 #### AnalogIn_Record  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AD2_AnalogFM_Demod_450kHz.png" alt="AD2_AnalogFM_Demod_450kHz" title="">  
