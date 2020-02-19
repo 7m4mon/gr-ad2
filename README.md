@@ -43,22 +43,24 @@ Notes:
 
 1, Download GNURadio v3.7 from [here](http://www.gcndevelopment.com/gnuradio/downloads.htm)
 
-2, Fixed GNURadio's corrupted python/pip installation (run PowerShell as Administrator)
+2, Download and install [Adept 2 Runtime](https://reference.digilentinc.com/reference/software/adept/start) and [Waveforms installers](https://reference.digilentinc.com/reference/software/waveforms/waveforms-3/start) from Digilent
+
+3, Fix GNURadio's corrupted python/pip installation (run PowerShell as Administrator)
     
 	$ cd "c:\Program Files\GNURadio-3.7\gr-python27\"
     $ .\python.exe -m pip install --upgrade pip --force-reinstall
 
-3, Install the dwf python package (run PowerShell as Administrator)
+4, Install the dwf python package (run PowerShell as Administrator)
 
     $ cd "c:\Program Files\GNURadio-3.7\gr-python27\Scripts\"
     $ .\pip.exe intall dwf
 	
-4, Copy the AD2-specific python files into GNURadio's python packages folder
+5, Copy the AD2-specific python files into GNURadio's python packages folder
 
 	* Find all the _init_.py and AD2_AnalogXx_Xxxxxx.py files in the subfolders of this repo
 	* Copy them all in separate folders into your "c:\Program Files\GNURadio-3.7\gr-python27\lib\site-packages\AD2_AnalogXx_Xxxxxx\"
 	
-5, Copy the AD2-specific block descriptor files into GNURadio's blocks folder	
+6, Copy the AD2-specific block descriptor files into GNURadio's blocks folder	
 	
 	* Find all AD2_AnalogXx_Xxxxxx.xml files in the subfolders of this repo
 	* Copy them into your "c:\Program Files\GNURadio-3.7\share\gnuradio\grc\blocks\"	
