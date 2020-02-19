@@ -8,11 +8,14 @@ by 7M4MON
     Original Author:  Digilent, Inc.  
 
 ## How to install
+Notes: 
+* Currently only GNURadio v3.7 is supported, because important file formats changed in v3.8 and the latest builds are not available on Raspbian. 
+* WX sinks are [becoming deprecated](https://stackoverflow.com/questions/39309189/when-developing-for-gnu-radio-should-i-use-wx-gui-or-qt-gui-widgets), so QT sinks are preferred in the GRC files.
 
 ### Linux (tested on Ubuntu and Raspbian)
 1, You need to install the following packages 
 
-    $ sudo apt install git cmake libboost-all-dev gnuradio doxygen python-pip
+    $ sudo apt install git cmake libboost-all-dev gnuradio=3.7.* doxygen python-pip
 
 2, Clone this repository
 
@@ -38,7 +41,28 @@ by 7M4MON
 
 ### Windows (tested on Windows 10)
 
-If you want to use on Windows, please refer to [here](https://github.com/7m4mon/gr-ad2/issues/1#issuecomment-586614708).
+1, Download GNURadio v3.7 from [here](http://www.gcndevelopment.com/gnuradio/downloads.htm)
+
+2, Fixed GNURadio's corrupted python/pip installation (run PowerShell as Administrator)
+    
+	$ cd "c:\Program Files\GNURadio-3.7\gr-python27\"
+    $ .\python.exe -m pip install --upgrade pip --force-reinstall
+
+3, Install the dwf python package (run PowerShell as Administrator)
+
+    $ cd "c:\Program Files\GNURadio-3.7\gr-python27\Scripts\"
+    $ .\pip.exe intall dwf
+	
+4, Copy the AD2-specific python files into GNURadio's python packages folder
+
+	* Find all the _init_.py and AD2_AnalogXx_Xxxxxx.py files in the subfolders of this repo
+	* Copy them all in separate folders into your "c:\Program Files\GNURadio-3.7\gr-python27\lib\site-packages\AD2_AnalogXx_Xxxxxx\"
+	
+5, Copy the AD2-specific block descriptor files into GNURadio's blocks folder	
+	
+	* Find all AD2_AnalogXx_Xxxxxx.xml files in the subfolders of this repo
+	* Copy them into your "c:\Program Files\GNURadio-3.7\share\gnuradio\grc\blocks\"	
+
 
 ## How to run the flow graph
 Start up the GNURadio Companion, and load any of the .brc files in this repo.
