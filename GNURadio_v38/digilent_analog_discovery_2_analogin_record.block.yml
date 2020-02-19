@@ -1,0 +1,31 @@
+id: AD2_AnalogIn_Record_AD2_AnalogIn_Record_f
+label: AD2 AnalogIn Record Source
+flags: [ python ]
+
+parameters:
+-   id: channel
+    label: Channel
+    dtype: int
+    
+-   id: v_range
+    label: Range [V]
+    dtype: float
+-   
+    id: hz_acq
+    label: Acq Freq [Hz]
+    dtype: int
+
+-   id: n_samples
+    label: Buffer Size
+    dtype: int
+
+outputs:
+-   domain: stream
+    dtype: float
+
+templates:
+    imports: import AD2_AnalogIn_Record
+    make: |-
+        AD2_AnalogIn_Record.AD2_AnalogIn_Record_f(${channel},${v_range},${hz_acq},${n_samples})
+
+file_format: 1
