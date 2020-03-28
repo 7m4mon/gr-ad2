@@ -100,3 +100,6 @@ There are several flow graph samples in this repo for different use cases.
 #### AnalogOut_Sine  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Sine.grc.png" alt="AnalogOut_Sine" title="">
 
+youtube video  
+[![](https://img.youtube.com/vi/U73z1yOFqjc/0.jpg)](https://www.youtube.com/watch?v=U73z1yOFqjc)
+
