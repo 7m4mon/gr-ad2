@@ -9,7 +9,7 @@ by 7M4MON
 
 ## How to install
 Notes: 
-* Currently only GNURadio v3.7 is supported, because important file formats changed in v3.8 and the latest builds are not available on Raspbian. 
+* Currently only GNURadio v3.7 is supported, because important file formats changed in v3.8 and the latest builds are not available on Raspbian. (Tagged v3.7)
 * WX sinks are [becoming deprecated](https://stackoverflow.com/questions/39309189/when-developing-for-gnu-radio-should-i-use-wx-gui-or-qt-gui-widgets), so QT sinks are preferred in the GRC files.
 
 ### Linux (tested on Ubuntu and Raspbian)
@@ -100,6 +100,6 @@ There are several flow graph samples in this repo for different use cases.
 #### AnalogOut_Sine  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Sine.grc.png" alt="AnalogOut_Sine" title="">
 
-youtube video  
+YouTube Video  
 [![](https://img.youtube.com/vi/U73z1yOFqjc/0.jpg)](https://www.youtube.com/watch?v=U73z1yOFqjc)
 
