@@ -9,7 +9,7 @@ by 7M4MON
 
 ## How to install
 Notes: 
-* Currently only GNURadio v3.7 is supported, because important file formats changed in v3.8 and the latest builds are not available on Raspbian. 
+* Currently only GNURadio v3.7 is supported, because important file formats changed in v3.8 and the latest builds are not available on Raspbian. (tagged v3.7)
 * WX sinks are [becoming deprecated](https://stackoverflow.com/questions/39309189/when-developing-for-gnu-radio-should-i-use-wx-gui-or-qt-gui-widgets), so QT sinks are preferred in the GRC files.
 
 ### Linux (tested on Ubuntu and Raspbian)
