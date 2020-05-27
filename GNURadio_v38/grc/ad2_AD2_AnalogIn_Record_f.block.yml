@@ -1,0 +1,30 @@
+# this yml file is written by Mr.Andras (https://github.com/andrasfuchs)
+
+id: ad2_AD2_AnalogIn_Record_f
+label: AD2 AnalogIn Record Source
+category: '[AnalogDiscovery2]'
+
+templates:
+  imports: import ad2
+  make: ad2.AD2_AnalogIn_Record_f(${channel},${v_range},${hz_acq},${n_samples})
+
+parameters:
+- id: channel
+  label: Channel
+  dtype: int
+- id: v_range
+  label: Range [V]
+  dtype: float
+- id: hz_acq
+  label: Acq Freq [Hz]
+  dtype: int
+- id: n_samples
+  label: Buffer Size
+  dtype: int
+
+
+outputs:
+- domain: stream
+  dtype: float
+
+file_format: 1
