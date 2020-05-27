@@ -14,7 +14,7 @@ Notes:
 * WX sinks are [becoming deprecated](https://stackoverflow.com/questions/39309189/when-developing-for-gnu-radio-should-i-use-wx-gui-or-qt-gui-widgets), so QT sinks are preferred in the GRC files.
 
 ### Linux (tested on Ubuntu and Raspbian)
-1, You need to install the following packages 
+1, You need to install the following packages (v3.7)
 
     $ sudo apt install git cmake libboost-all-dev gnuradio=3.7.* doxygen python-pip
 
@@ -23,9 +23,16 @@ Notes:
     $ git clone https://github.com/7m4mon/gr-ad2
     $ cd gr-ad2/
 
-3, Build each module at their "gr-AD2_AnalogXx_Xxxxxx" directory
+3, Build each module at their "gr-AD2_AnalogXx_Xxxxxx" directory (v3.7)
 
-    $ cd gr-AD2_AnalogXx_Xxxxxx/
+    $ cd GNURadio_v37/gr-AD2_AnalogXx_Xxxxxx/
+
+ When using v3.8, the blocks are combined into one mod. So, you can install at once.
+
+    $ cd GNURadio_v38/
+
+Build as usual procedure.
+
     $ mkdir build  
     $ cd build  
     $ cmake ../  

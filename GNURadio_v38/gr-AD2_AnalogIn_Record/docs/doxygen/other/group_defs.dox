@@ -1,7 +1,0 @@
-/*!
- * \defgroup block GNU Radio AD2_ANALOGIN_RECORD C++ Signal Processing Blocks
- * \brief All C++ blocks that can be used from the AD2_ANALOGIN_RECORD GNU Radio
- *        module are listed here or in the subcategories below.
- *
- */
-
