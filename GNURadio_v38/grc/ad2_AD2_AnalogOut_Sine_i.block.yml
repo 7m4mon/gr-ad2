@@ -1,0 +1,26 @@
+id: ad2_AD2_AnalogOut_Sine_i
+label: AD2 AnalogOut Sine Sink
+category: '[AnalogDiscovery2]'
+
+templates:
+  imports: import ad2
+  make: ad2.AD2_AnalogOut_Sine_i(${channel}, ${amplituide}, ${offset})
+
+parameters:
+- id: channel
+  label: Channel
+  dtype: int
+- id: amplituide
+  label: Amplituide
+  dtype: float
+- id: offset
+  label: Offset
+  dtype: float
+
+inputs:
+- label: freqHz
+  domain: stream
+  dtype: int
+
+file_format: 1
+
