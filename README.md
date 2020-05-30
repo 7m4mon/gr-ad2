@@ -99,12 +99,6 @@ There are several flow graph samples in this repo for different use cases.
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play_AM_Mod_Photo.jpg" alt="AnalogOut_Play_AM_Mod_Photo" title="">
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Play.grc.png" alt="AnalogOut_Play" title="">
 
-#### AnalogIn_Shift  
-<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogIn_Shift.grc.png" alt="AnalogIn_Shift" title="">
-
-#### AnalogOut_Custom  
-<img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Custom.grc.png" alt="AnalogOut_Custom" title="">
-
 #### AnalogOut_Sine  
 <img src="https://github.com/7m4mon/gr-ad2/blob/master/AnalogOut_Sine.grc.png" alt="AnalogOut_Sine" title="">
 
