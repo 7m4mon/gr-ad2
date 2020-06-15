@@ -115,7 +115,7 @@ blocks:
     bus_structure: null
     coordinate: [469, 109]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: qtgui_time_sink_x_0
   id: qtgui_time_sink_x
   parameters:

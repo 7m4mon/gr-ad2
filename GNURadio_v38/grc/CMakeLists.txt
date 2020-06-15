@@ -20,5 +20,6 @@
 
 install(FILES
     ad2_AD2_AnalogIn_Record_f.block.yml
-    ad2_AD2_AnalogOut_Play_f.block.yml DESTINATION share/gnuradio/grc/blocks
+    ad2_AD2_AnalogOut_Play_f.block.yml
+    ad2_AD2_AnalogOut_Sine_i.block.yml DESTINATION share/gnuradio/grc/blocks
 )

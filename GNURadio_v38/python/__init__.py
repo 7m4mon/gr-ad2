@@ -34,4 +34,5 @@ except ImportError:
 # import any pure python here
 from .AD2_AnalogIn_Record_f import AD2_AnalogIn_Record_f
 from .AD2_AnalogOut_Play_f import AD2_AnalogOut_Play_f
+from .AD2_AnalogOut_Sine_i import AD2_AnalogOut_Sine_i
 #

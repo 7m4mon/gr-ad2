@@ -33,7 +33,8 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     AD2_AnalogIn_Record_f.py
-    AD2_AnalogOut_Play_f.py DESTINATION ${GR_PYTHON_DIR}/ad2
+    AD2_AnalogOut_Play_f.py
+    AD2_AnalogOut_Sine_i.py DESTINATION ${GR_PYTHON_DIR}/ad2
 )
 
 ########################################################################
